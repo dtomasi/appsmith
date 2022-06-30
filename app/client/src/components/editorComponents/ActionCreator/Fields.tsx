@@ -188,6 +188,9 @@ const fieldConfigs: FieldConfigs = {
         case AppsmithFunction.resetWidget:
           defaultParams = `"",true`;
           break;
+        case ActionType.postMessage:
+          defaultParams = `"", '*'`;
+          break;
         default:
           break;
       }
