@@ -423,3 +423,5 @@ export const scrollbarOnHoverCSS = `
     }
   }
 `;
+
+export const MULTISELECT_CHECKBOX_WIDTH = 40;
