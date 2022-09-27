@@ -197,7 +197,7 @@ const fieldConfigs: FieldConfigs = {
         case AppsmithFunction.resetWidget:
           defaultParams = `"",true`;
           break;
-        case ActionType.postMessage:
+        case AppsmithFunction.postMessage:
           defaultParams = `'', 'window', '*'`;
           break;
         default:
