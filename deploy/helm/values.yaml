@@ -1,11 +1,13 @@
 ## Redis parameters
 redis:
+  enabled: true
   auth:
     enabled: false
   replica:
     replicaCount: 1
 
 mongodb:
+  enabled: true
   service:
     nameOverride: appsmith-mongodb
   auth:
