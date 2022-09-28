@@ -109,9 +109,10 @@ const views = {
     );
   },
   [ViewTypes.TEXT_VIEW]: function TextView(props: TextViewProps) {
+    const testId = `${props.label.split(" ").join("-")}-code-wrapper`;
     return (
       <FieldWrapper>
-        <ControlWrapper isAction key={props.label}>
+        <ControlWrapper data-testid={testId} isAction key={props.label}>
           <ControlPropertyLabelContainer className="gap-1">
             {props.label && (
               <PropertyHelpLabel
